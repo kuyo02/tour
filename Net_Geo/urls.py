@@ -16,7 +16,25 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+from Net_Geo import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('int404/', views.int404),
+    path('about/', views.about, name='about'),
+    path('contact/', views.contact, name='contact'),
+    path('blog/', views.blog, name='blog'),
+    path('blog_details/', views.blog_details, name='blog_details'),
+    path('booking/', views.booking, name='booking'),
+    path('destination_details/', views.destination_details, name='destination_details'),
+    path('destinations/', views.destinations, name='destinations'),
+    path('faq/', views.faq, name='faq'),
+    path('gallery/', views.gallery, name='gallery'),
+    path('index/', views.index, name='index'),
+    path('privacy/', views.privacy, name='privacy'),
+    path('starter_page/', views.starter_page, name='starter_page'),
+    path('terms/', views.terms, name='terms'),
+    path('testimonials/', views.testimonials, name='testimonials'),
+    path('tour_details/', views.tour_details, name='tour_details'),
+    path('tours/', views.tours, name='tours'),
 ]
